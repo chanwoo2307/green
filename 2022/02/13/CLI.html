@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CLI는 무엇일까? | chanwoo</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="CLI는 무엇일까?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://chanwoo2307.github.io/green/2022/02/13/CLI.html" />
+<meta property="og:url" content="https://chanwoo2307.github.io/green/2022/02/13/CLI.html" />
+<meta property="og:site_name" content="chanwoo" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-13T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CLI는 무엇일까?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-02-13T00:00:00-06:00","datePublished":"2022-02-13T00:00:00-06:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"CLI는 무엇일까?","mainEntityOfPage":{"@type":"WebPage","@id":"https://chanwoo2307.github.io/green/2022/02/13/CLI.html"},"url":"https://chanwoo2307.github.io/green/2022/02/13/CLI.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/green/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://chanwoo2307.github.io/green/feed.xml" title="chanwoo" /><link rel="shortcut icon" type="image/x-icon" href="/green/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/green/">chanwoo</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/green/about/">About Me</a><a class="page-link" href="/green/search/">Search</a><a class="page-link" href="/green/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">CLI는 무엇일까?</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-02-13T00:00:00-06:00" itemprop="datePublished">
+        Feb 13, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/chanwoo2307/green/tree/master/_notebooks/2022-02-13 CLI.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/green/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/chanwoo2307/green/master?filepath=_notebooks%2F2022-02-13+CLI.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/green/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/chanwoo2307/green/blob/master/_notebooks/2022-02-13 CLI.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/green/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fchanwoo2307%2Fgreen%2Fblob%2Fmaster%2F_notebooks%2F2022-02-13+CLI.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/green/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-02-13 CLI.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>옛날에는 윈도우의 검은 화면의 흰 글씨 화면에서 컴퓨터를 다루었다.
+그것을 CLI(command line interface)라 한다</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>1968년에 최초의 마우스가 나오면서 아이콘을 클릭해서 대상을 옮기거나 웹페이지 서핑이 가능하게 되었다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>이렇게 GUI(Grapics user interpace)가 발명이 되었다. 하지만 GUI용 프로그램을 바로 코딩을 할 수 없었는데
+그 이유는 아직 CLI을 대상으로 하는 프로그램을 짜지 못하였기 때문이다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="CLI-&#54532;&#47196;&#44536;&#47016;">CLI &#54532;&#47196;&#44536;&#47016;<a class="anchor-link" href="#CLI-&#54532;&#47196;&#44536;&#47016;"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>windows의 대표적인 CLI프로그램은 Cygwin이 있고 리눅스나 MAC은 terminal을 대표적으로 사용한다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="CLI&#51032;-&#47749;&#47161;&#50612;&#47484;-&#44036;&#45800;&#54616;&#44172;-&#50508;&#50500;&#48372;&#51088;">CLI&#51032; &#47749;&#47161;&#50612;&#47484; &#44036;&#45800;&#54616;&#44172; &#50508;&#50500;&#48372;&#51088;<a class="anchor-link" href="#CLI&#51032;-&#47749;&#47161;&#50612;&#47484;-&#44036;&#45800;&#54616;&#44172;-&#50508;&#50500;&#48372;&#51088;"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.clear">1.clear<a class="anchor-link" href="#1.clear"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>clear 명령을 사용하면 화면을 깨끗하게 지울 수 있다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="2.mkdir">2.mkdir<a class="anchor-link" href="#2.mkdir"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>mkdir은 make directory의 약자로 폴더를 만드는 명렁어이다.
+mkdir chanwoo를 입력하면 chanwoo라는 폴더가 생성된다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.touch">3.touch<a class="anchor-link" href="#3.touch"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>touch는 파일을 만드는 명령어이다. touch hi.c를 입력하면 hi.c파일이 생성된다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.-rm">4. rm<a class="anchor-link" href="#4.-rm"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>rm은 remove의 약자로 파일을 삭제하는 명령어이다. rm hi.c를 입력하면 hi.c 파일이 삭제된다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.-rm--r">5. rm -r<a class="anchor-link" href="#5.-rm--r"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>rm -r은 폴더를 삭제하는 명령어이다. rm -r chanwoo를 입력하면 chanwoo라는 폴더가 삭제된다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>참고로 rm -rf를 입력하면 폴더안에 파일이 너무 많을 때 강제로 폴더를 지울 수 있다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="6.-ls">6. ls<a class="anchor-link" href="#6.-ls"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ls는 list의 약자로 ls 명령어를 사용하면 현제 디렉토리에 있는 폴더의 이름이나 파일의 이름을 알 수 있다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="6.1-ls--l">6.1 ls -l<a class="anchor-link" href="#6.1-ls--l"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>list 형식으로 현제 디렉토리에 있는 폴더의 이름이나 파일의 이름을 알 수 있으며 각각의 파일이나 폴더가 언제 만들었는지도 알 수 있다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="6.2-ls--a">6.2 ls -a<a class="anchor-link" href="#6.2-ls--a"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ls -a를 명령어를 입력하면 숨김 파일도 볼 수 있으며  .은 자기 자신을 의미하고  ..은 자신의 상위 디렉토리를 의미한다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="7.-cd">7. cd<a class="anchor-link" href="#7.-cd"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>cd는 change directory의 약자로 cd chanwoo를 입력하면 chanwoo 폴더에 들어갈 수 있다. cd ..을 입력하면 자신의 상위 디렉토리로 이동할 수 있다.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/green/2022/02/13/CLI.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/green/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/green/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/green/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/chanwoo2307" target="_blank" title="chanwoo2307"><svg class="svg-icon grey"><use xlink:href="/green/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
