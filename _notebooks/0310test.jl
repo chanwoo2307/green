@@ -127,6 +127,9 @@ str1
 # ╔═╡ 327aea28-64b7-4f56-9203-f56117bd7ffc
 str1[1] #파이썬과 다르게 1번쪠 문자가 1라고 잘 표시 됨.
 
+# ╔═╡ 46c5401a-5e94-4dff-9447-8f8fd79a8e0a
+length(str1) #str1의 길이
+
 # ╔═╡ c6307db0-5b7e-4b25-bbdf-8fee7d90e95e
 str1[2], str1[1:2]
 
@@ -237,6 +240,7 @@ manifest_format = "2.0"
 # ╠═06e12df0-f871-4b64-af54-8ac5a28354bb
 # ╠═5986ef94-dfe1-41e8-bd50-28724dc6194c
 # ╠═327aea28-64b7-4f56-9203-f56117bd7ffc
+# ╠═46c5401a-5e94-4dff-9447-8f8fd79a8e0a
 # ╠═c6307db0-5b7e-4b25-bbdf-8fee7d90e95e
 # ╠═bb71aaea-d562-44b2-867f-0fc0846b50a8
 # ╠═91c7b5a5-0b79-4ada-ab48-885d0ff672c2
