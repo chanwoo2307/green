@@ -12,8 +12,11 @@ md"""
 
 # ╔═╡ 29b25571-c231-485a-9957-3dee5a9065e8
 html"""
-<div notthestyle="position: relative; right: 0; top: 0; z-index: 300;"><iframe src="https://www.youtube.com/embed/playlist?list=PLQqh36zP38-zzUFDwoJ9CUCiyDJC6X1In" width=600 height=375  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div notthestyle="position: relative; right: 100; top: 0; z-index: 300;"><iframe src="https://www.youtube.com/embed/playlist?list=PLQqh36zP38-zzUFDwoJ9CUCiyDJC6X1In" width=600 height=375  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 """
+
+# ╔═╡ 03bfb1bb-6de0-4836-92e6-5abafaad1784
+
 
 # ╔═╡ bc068777-a366-4552-a8d7-d2fd4429f01c
 md"# 3월10일 강의노트"
@@ -432,7 +435,8 @@ manifest_format = "2.0"
 
 # ╔═╡ Cell order:
 # ╠═85412e62-9770-4a85-92cb-0b2366ba5a81
-# ╟─29b25571-c231-485a-9957-3dee5a9065e8
+# ╠═29b25571-c231-485a-9957-3dee5a9065e8
+# ╠═03bfb1bb-6de0-4836-92e6-5abafaad1784
 # ╠═bc068777-a366-4552-a8d7-d2fd4429f01c
 # ╟─7fd5c088-5ac0-432c-8aa5-251823a15dad
 # ╟─8688fb1a-e5d1-498f-8fd5-2944191a832e
