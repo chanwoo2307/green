@@ -86,9 +86,6 @@ typeof(123.123)
 # ╔═╡ a52684e4-00d6-4983-bbe1-e6dd60151cda
 typeof([123])
 
-# ╔═╡ 2a904673-c6d8-4aa5-babe-a67693fca5f3
-
-
 # ╔═╡ 78bd7b91-1e39-4965-96e1-ea07f7d4bcd3
 md" # Inf 와 NaN"
 
@@ -155,6 +152,16 @@ string(str1, "cake") # 2번째 방법
 "10+20=$(10+20)" # 문자열 끼워넣기
 
 # ╔═╡ cc5cca1f-f811-4e9f-b3a4-7017d9acdedc
+begin
+	word1= "chanwoo"
+	word2= "studying"
+	word3= "Julia"
+end
+
+# ╔═╡ afa02578-8245-4d8c-8cf7-b5006b44920a
+"$word1 is $word2 $word3" #이렇게 쓸 수 도 있다.
+
+# ╔═╡ cf7c581f-09cd-48e9-9b60-f096a4e6e365
 
 
 # ╔═╡ 2129ce29-63ed-454b-b027-91c0721f4d9b
@@ -239,7 +246,6 @@ manifest_format = "2.0"
 # ╠═44c831d5-c933-44c0-9678-5f74d8eb2da0
 # ╠═efc18e7f-dcee-41e5-baa3-41639512fcb9
 # ╠═a52684e4-00d6-4983-bbe1-e6dd60151cda
-# ╠═2a904673-c6d8-4aa5-babe-a67693fca5f3
 # ╠═78bd7b91-1e39-4965-96e1-ea07f7d4bcd3
 # ╠═275a1b8a-c117-49df-a763-bf6204368e01
 # ╠═cb64a3ad-2127-4b1c-843f-55a6ab124855
@@ -262,6 +268,8 @@ manifest_format = "2.0"
 # ╠═58bc9bc8-45f6-4651-8395-53120e15a684
 # ╠═59e8784e-d82c-465a-9cbe-ec570eb59f93
 # ╠═cc5cca1f-f811-4e9f-b3a4-7017d9acdedc
+# ╠═afa02578-8245-4d8c-8cf7-b5006b44920a
+# ╠═cf7c581f-09cd-48e9-9b60-f096a4e6e365
 # ╠═2129ce29-63ed-454b-b027-91c0721f4d9b
 # ╠═f68e03e6-9e41-4be4-a5d3-1b9249a9fde5
 # ╠═b638c89f-53e4-44f5-989a-b662b32773cb
