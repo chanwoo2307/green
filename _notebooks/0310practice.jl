@@ -269,11 +269,49 @@ md" ### 난수로 벡터를 선헌하는 방법"
 # ╔═╡ 15bbb300-f2c3-4caa-9aae-ce1bbf7bde35
 randn(4) #정규분포
 
-# ╔═╡ dce7eb9f-0fc7-4b03-8933-e808ce2fa0ae
-
-
 # ╔═╡ 08365a07-d633-44c1-8586-08a0e7ce7f23
-randn(4)
+ rand(4) #유니폼 분포 
+
+# ╔═╡ 2102e38a-9e6d-4b71-a003-346b31091a08
+rand([1,2,3,4],3) #rand의 두번쨰 기능 : sample= 무작위로 3번의 복원추출
+
+# ╔═╡ 6ab29751-989a-4ca8-bc8f-bacc1fe3be74
+
+md" ### 리스트 컴프리헨션"
+
+# ╔═╡ 3c97feeb-cf05-48a0-b765-cc779a026f57
+√1, √2,√3, √4
+
+# ╔═╡ 756bd1e6-dce4-4bca-a4c2-89421ba069f4
+[√i for i in [1,2,3,4]] #다른 표햔
+
+# ╔═╡ 13fe15d6-6ee2-4503-8254-e08fcdb9f7a9
+md"""
+$\{\sqrt{1},\sqrt{2},\sqrt{3},\sqrt{4} \}= \{\sqrt{i}: i=1,2,3,4 \}$"""
+
+# ╔═╡ 0f5fbd3c-4fdc-4d46-981a-ba52fec072e0
+
+
+# ╔═╡ 71bdb5fb-f977-4ecc-b43f-bebce77d3b52
+
+
+# ╔═╡ fcc4ecf8-e4e8-4dd7-88e4-6c28a8f31933
+
+
+# ╔═╡ 543e5600-d94c-4ef2-8f27-38ab3b011061
+
+
+# ╔═╡ 37ec1f97-c1c0-4f62-842c-07f986edb34e
+
+
+# ╔═╡ b2e7435d-d408-441c-a30e-5cef3314cade
+
+
+# ╔═╡ f8da476f-1e73-42d1-960a-9f5f3b71c237
+
+
+# ╔═╡ b2a5908f-7532-44fd-add2-28c55b38414d
+
 
 # ╔═╡ 28baeb0d-fc34-4e12-bb64-65bc7175249e
 
@@ -396,8 +434,20 @@ manifest_format = "2.0"
 # ╠═82046e59-da76-43a5-a82b-5c696007442d
 # ╠═2cf67fbf-a984-4313-9ffb-81bd7481f34a
 # ╠═15bbb300-f2c3-4caa-9aae-ce1bbf7bde35
-# ╠═dce7eb9f-0fc7-4b03-8933-e808ce2fa0ae
 # ╠═08365a07-d633-44c1-8586-08a0e7ce7f23
+# ╠═2102e38a-9e6d-4b71-a003-346b31091a08
+# ╠═6ab29751-989a-4ca8-bc8f-bacc1fe3be74
+# ╠═3c97feeb-cf05-48a0-b765-cc779a026f57
+# ╠═756bd1e6-dce4-4bca-a4c2-89421ba069f4
+# ╠═13fe15d6-6ee2-4503-8254-e08fcdb9f7a9
+# ╠═0f5fbd3c-4fdc-4d46-981a-ba52fec072e0
+# ╠═71bdb5fb-f977-4ecc-b43f-bebce77d3b52
+# ╠═fcc4ecf8-e4e8-4dd7-88e4-6c28a8f31933
+# ╠═543e5600-d94c-4ef2-8f27-38ab3b011061
+# ╠═37ec1f97-c1c0-4f62-842c-07f986edb34e
+# ╠═b2e7435d-d408-441c-a30e-5cef3314cade
+# ╠═f8da476f-1e73-42d1-960a-9f5f3b71c237
+# ╠═b2a5908f-7532-44fd-add2-28c55b38414d
 # ╠═28baeb0d-fc34-4e12-bb64-65bc7175249e
 # ╠═2668701d-d940-4aab-8c0d-c727f2d28c20
 # ╠═d8d2579b-fcec-4177-977b-aee79731b826
