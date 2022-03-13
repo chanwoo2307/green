@@ -56,11 +56,11 @@ md"### 위젯 사용 방법(PlutoUI)"
 md"### 1.라디오버튼"
 
 # ╔═╡ bfbc1f9b-81b0-4b61-b05d-00335f3d22bd
-@bind classmate Radio(["1학년","2학년","3학년","4학년"]) 
+@bind grade Radio(["1학년","2학년","3학년","4학년"]) 
 #classmate에 내가 클릭한 결과가 변수가 저장된다.
 
 # ╔═╡ 397c7f4b-3510-42f9-ae6f-801f7b4eedac
-classmate
+grade
 
 # ╔═╡ 43538c4a-3a7e-47f8-bc6e-10122adff85c
 if classmate=="1학년"
@@ -69,6 +69,15 @@ else
 	md"# 당신은 1학년이 아닙니다."
 
 # ╔═╡ 5941768c-1a44-4153-9919-556e83e01892
+md" 나의 학년: $grade"
+
+# ╔═╡ 332a0ecf-f6b8-4b36-afcf-60298dd3653d
+
+
+# ╔═╡ 3c31db5e-c92a-49e9-9bd9-88e919626e62
+
+
+# ╔═╡ 8b3aa15a-410f-4860-b194-cdb7776bdd8b
 
 
 # ╔═╡ b19ace00-8f23-46d8-9e7c-b8a617c65a53
@@ -348,6 +357,9 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═397c7f4b-3510-42f9-ae6f-801f7b4eedac
 # ╠═43538c4a-3a7e-47f8-bc6e-10122adff85c
 # ╠═5941768c-1a44-4153-9919-556e83e01892
+# ╠═332a0ecf-f6b8-4b36-afcf-60298dd3653d
+# ╠═3c31db5e-c92a-49e9-9bd9-88e919626e62
+# ╠═8b3aa15a-410f-4860-b194-cdb7776bdd8b
 # ╠═b19ace00-8f23-46d8-9e7c-b8a617c65a53
 # ╠═bb694b8c-5e16-4cb7-8328-86a905649dfc
 # ╠═cd69978e-788e-47f2-8897-fccfad9a3598
