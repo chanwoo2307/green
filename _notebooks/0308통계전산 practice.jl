@@ -181,6 +181,9 @@ md"##### 슬라이더($\star$)"
 @bind value2 Slider(50:100,show_value=true, default=60) #숫자를 보이게 표시
 
 # ╔═╡ 93dd94d3-6995-48ec-87b0-467336f98d79
+value2
+
+# ╔═╡ 4dff3662-ec25-4f85-a713-5b1c7b7ce11d
 
 
 # ╔═╡ 84c5a194-9bc7-4bb5-ad70-692d33370b7d
@@ -577,6 +580,7 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═356502e3-9ecd-4e79-8e9e-2d97b9e0bd30
 # ╠═2569f445-90ef-43ea-aed9-e6b6a281a353
 # ╠═93dd94d3-6995-48ec-87b0-467336f98d79
+# ╠═4dff3662-ec25-4f85-a713-5b1c7b7ce11d
 # ╠═84c5a194-9bc7-4bb5-ad70-692d33370b7d
 # ╠═9685a49d-d980-4707-9936-6ef3cee31c47
 # ╠═f9c6ab98-76be-4e6d-8015-a7da66405db4
