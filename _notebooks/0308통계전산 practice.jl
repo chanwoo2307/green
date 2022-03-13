@@ -63,7 +63,7 @@ md"### 1.라디오버튼"
 grade
 
 # ╔═╡ 43538c4a-3a7e-47f8-bc6e-10122adff85c
-if classmate=="1학년"
+if grade=="1학년"
 	md"# 당신은 1학년입니다 "
 else 
 	md"# 당신은 1학년이 아닙니다."
@@ -89,10 +89,22 @@ if checkbox1
 else md"체크박스상태가 $checkbox1 이네요 ->->당신은 체크박스를 선택하지 않았습니다" 
 end
 
-# ╔═╡ b50bea5f-2dd9-4861-8786-d5395d3a60d7
-
-
 # ╔═╡ 65b4df12-bb07-4060-8ff1-4dc43d095fad
+md"## 글상자"
+
+# ╔═╡ 7d1804cd-e5d4-4da2-bb54-5e57624061ce
+@bind textbox TextField() #글상자를 만들고 textbox에 내용을 저장
+
+# ╔═╡ 4bf3b55d-7b99-47f8-b19d-b959e7c1150e
+textbox
+
+# ╔═╡ 4bfdcca6-673b-4b9b-b3e4-8d4a5b44f7d3
+lowercase(textbox) #textbox의 대문자를 소문자로 보여줌
+
+# ╔═╡ 1dca195d-c4cd-48c7-bed2-82aab3b498b0
+
+
+# ╔═╡ 9e5e2a4f-204b-44a6-964c-4e4a5f6d1165
 
 
 # ╔═╡ 9c0353f7-99eb-45ea-ae69-814971628591
@@ -398,8 +410,12 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═1e914217-c743-4670-95d7-0cb9ea457b0e
 # ╠═eb77ef77-5c25-4cfd-9674-7dcb28944601
 # ╠═87b9ae46-e7f5-4bbd-af27-011b6e1316fd
-# ╠═b50bea5f-2dd9-4861-8786-d5395d3a60d7
 # ╠═65b4df12-bb07-4060-8ff1-4dc43d095fad
+# ╠═7d1804cd-e5d4-4da2-bb54-5e57624061ce
+# ╠═4bf3b55d-7b99-47f8-b19d-b959e7c1150e
+# ╠═4bfdcca6-673b-4b9b-b3e4-8d4a5b44f7d3
+# ╠═1dca195d-c4cd-48c7-bed2-82aab3b498b0
+# ╠═9e5e2a4f-204b-44a6-964c-4e4a5f6d1165
 # ╠═9c0353f7-99eb-45ea-ae69-814971628591
 # ╠═10e26093-fd37-4a80-87fc-a3bc39978adf
 # ╠═799bf032-dc53-4a82-83db-762d1d04e1a2
