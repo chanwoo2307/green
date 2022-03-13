@@ -120,7 +120,40 @@ md"## 패스워드 입력창"
 password #이렇게 내용을 확인가능
 
 # ╔═╡ dc717a99-21b0-40e6-98fc-b066ad9b7bee
- 
+ md"### 날짜선택"
+
+# ╔═╡ 14a584ad-46bd-4038-bcb1-2f0dcdf5c5a3
+@bind DayMonthYear1 DateField()
+
+# ╔═╡ ba578e8b-dd04-4a1b-a7ad-f12d984ad144
+@bind DayMonthYear2 DateField()
+
+# ╔═╡ 8e8643cb-d2c5-4b46-8074-6413cacd65ee
+DayMonthYear1 > DayMonthYear2
+
+# ╔═╡ 144a1393-e5d0-4096-ac72-e1c6e2f3c92b
+DayMonthYear1 < DayMonthYear2 ##날짜간 대소구분 가능
+
+# ╔═╡ b281bf7b-6726-4f29-9c8a-3ebad399fc44
+
+
+# ╔═╡ 4fe88acb-21fd-4d92-b37c-9aa55f1b412d
+
+
+# ╔═╡ 998804da-3f70-4213-abe6-036198936361
+
+
+# ╔═╡ cb77c8b8-f2cc-4768-b162-e8b23be75c06
+
+
+# ╔═╡ 50ab23e1-f2ce-4fed-8718-4f336f674b67
+
+
+# ╔═╡ 70e46fe9-0c75-40fa-8529-272e506b6972
+
+
+# ╔═╡ ad9532ac-9e69-40d6-ac7a-b819a3040be7
+
 
 # ╔═╡ 600225db-9ce9-4217-8b70-d4476186ad15
 
@@ -454,6 +487,17 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═e0b04fbb-d89a-4cf2-a5c5-cc4749daba1b
 # ╠═0e234255-06b4-41e7-82c0-4e3133b67ec6
 # ╠═dc717a99-21b0-40e6-98fc-b066ad9b7bee
+# ╠═14a584ad-46bd-4038-bcb1-2f0dcdf5c5a3
+# ╠═ba578e8b-dd04-4a1b-a7ad-f12d984ad144
+# ╠═8e8643cb-d2c5-4b46-8074-6413cacd65ee
+# ╠═144a1393-e5d0-4096-ac72-e1c6e2f3c92b
+# ╠═b281bf7b-6726-4f29-9c8a-3ebad399fc44
+# ╠═4fe88acb-21fd-4d92-b37c-9aa55f1b412d
+# ╠═998804da-3f70-4213-abe6-036198936361
+# ╠═cb77c8b8-f2cc-4768-b162-e8b23be75c06
+# ╠═50ab23e1-f2ce-4fed-8718-4f336f674b67
+# ╠═70e46fe9-0c75-40fa-8529-272e506b6972
+# ╠═ad9532ac-9e69-40d6-ac7a-b819a3040be7
 # ╠═600225db-9ce9-4217-8b70-d4476186ad15
 # ╠═10efc046-fd81-4420-82bd-d4758e6d89c9
 # ╠═e6a2e148-a944-465f-b1d0-d3a86795225e
