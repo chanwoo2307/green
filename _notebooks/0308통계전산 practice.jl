@@ -101,10 +101,31 @@ textbox
 # ╔═╡ 4bfdcca6-673b-4b9b-b3e4-8d4a5b44f7d3
 lowercase(textbox) #textbox의 대문자를 소문자로 보여줌
 
-# ╔═╡ 1dca195d-c4cd-48c7-bed2-82aab3b498b0
-
-
 # ╔═╡ 9e5e2a4f-204b-44a6-964c-4e4a5f6d1165
+md"### 커다란 글상자"
+
+# ╔═╡ 6d7e2ec6-efca-4c54-95b5-2ca764ee5513
+@bind textbox2 TextField((30,3)) #기존 글상자에 ()의 값을 입력
+
+# ╔═╡ 18ed11cd-b607-4ab3-ae6f-6e80e3196230
+textbox2
+
+# ╔═╡ dee1c0db-bd30-40c6-93d0-07d586b421de
+
+
+# ╔═╡ 10efc046-fd81-4420-82bd-d4758e6d89c9
+
+
+# ╔═╡ e6a2e148-a944-465f-b1d0-d3a86795225e
+
+
+# ╔═╡ 7bcafbdb-dc21-454d-9f7a-6b088e8cf286
+
+
+# ╔═╡ de6395fc-bf8e-4c6a-b895-b7946d846917
+
+
+# ╔═╡ b4c24bac-7680-48f1-958f-4844c5e758ff
 
 
 # ╔═╡ 9c0353f7-99eb-45ea-ae69-814971628591
@@ -414,8 +435,15 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═7d1804cd-e5d4-4da2-bb54-5e57624061ce
 # ╠═4bf3b55d-7b99-47f8-b19d-b959e7c1150e
 # ╠═4bfdcca6-673b-4b9b-b3e4-8d4a5b44f7d3
-# ╠═1dca195d-c4cd-48c7-bed2-82aab3b498b0
 # ╠═9e5e2a4f-204b-44a6-964c-4e4a5f6d1165
+# ╠═6d7e2ec6-efca-4c54-95b5-2ca764ee5513
+# ╠═18ed11cd-b607-4ab3-ae6f-6e80e3196230
+# ╠═dee1c0db-bd30-40c6-93d0-07d586b421de
+# ╠═10efc046-fd81-4420-82bd-d4758e6d89c9
+# ╠═e6a2e148-a944-465f-b1d0-d3a86795225e
+# ╠═7bcafbdb-dc21-454d-9f7a-6b088e8cf286
+# ╠═de6395fc-bf8e-4c6a-b895-b7946d846917
+# ╠═b4c24bac-7680-48f1-958f-4844c5e758ff
 # ╠═9c0353f7-99eb-45ea-ae69-814971628591
 # ╠═10e26093-fd37-4a80-87fc-a3bc39978adf
 # ╠═799bf032-dc53-4a82-83db-762d1d04e1a2
