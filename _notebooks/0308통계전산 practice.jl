@@ -135,9 +135,34 @@ DayMonthYear1 > DayMonthYear2
 DayMonthYear1 < DayMonthYear2 ##날짜간 대소구분 가능
 
 # ╔═╡ b281bf7b-6726-4f29-9c8a-3ebad399fc44
-
+md"### 시간선택"
 
 # ╔═╡ 4fe88acb-21fd-4d92-b37c-9aa55f1b412d
+@bind hourminute TimeField()
+
+# ╔═╡ a018f8b3-a1c2-4ea5-b6a4-9357f60fb84c
+hourminute
+
+# ╔═╡ 948cce31-f71b-4077-b2cd-c374c953425d
+md"### 드롭다운"
+
+# ╔═╡ 7656118c-eda6-476a-842b-bb3c4f76dd28
+@bind grade2 Select(["1학년","2학년","3학년","4학년",],default="3학년")
+#default 옵션을 주면 선택을 하지 않아도 내가 원하는 옵션을 지정할 수 있다.
+
+# ╔═╡ 3d25e91f-5a25-41ce-83c1-8d81476c479d
+grade2
+
+# ╔═╡ c27e2be3-f204-44f1-93f8-be40de6cdfb9
+md"### 드롭다운 선택(맵핑)"
+
+# ╔═╡ a58273ea-7c93-4bd8-a934-7254705eae4b
+
+
+# ╔═╡ d317b179-568c-4b0d-ac75-5d9777d9465d
+
+
+# ╔═╡ 7fe2180b-9bc8-4e53-ab02-1db9b1c3db16
 
 
 # ╔═╡ 998804da-3f70-4213-abe6-036198936361
@@ -493,6 +518,14 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═144a1393-e5d0-4096-ac72-e1c6e2f3c92b
 # ╠═b281bf7b-6726-4f29-9c8a-3ebad399fc44
 # ╠═4fe88acb-21fd-4d92-b37c-9aa55f1b412d
+# ╠═a018f8b3-a1c2-4ea5-b6a4-9357f60fb84c
+# ╠═948cce31-f71b-4077-b2cd-c374c953425d
+# ╠═7656118c-eda6-476a-842b-bb3c4f76dd28
+# ╠═3d25e91f-5a25-41ce-83c1-8d81476c479d
+# ╠═c27e2be3-f204-44f1-93f8-be40de6cdfb9
+# ╠═a58273ea-7c93-4bd8-a934-7254705eae4b
+# ╠═d317b179-568c-4b0d-ac75-5d9777d9465d
+# ╠═7fe2180b-9bc8-4e53-ab02-1db9b1c3db16
 # ╠═998804da-3f70-4213-abe6-036198936361
 # ╠═cb77c8b8-f2cc-4768-b162-e8b23be75c06
 # ╠═50ab23e1-f2ce-4fed-8718-4f336f674b67
