@@ -111,6 +111,18 @@ md"### 커다란 글상자"
 textbox2
 
 # ╔═╡ dee1c0db-bd30-40c6-93d0-07d586b421de
+md"## 패스워드 입력창"
+
+# ╔═╡ e0b04fbb-d89a-4cf2-a5c5-cc4749daba1b
+@bind password PasswordField() #글상자 안에 입력한 내용이 가려져 있음
+
+# ╔═╡ 0e234255-06b4-41e7-82c0-4e3133b67ec6
+password #이렇게 내용을 확인가능
+
+# ╔═╡ dc717a99-21b0-40e6-98fc-b066ad9b7bee
+ 
+
+# ╔═╡ 600225db-9ce9-4217-8b70-d4476186ad15
 
 
 # ╔═╡ 10efc046-fd81-4420-82bd-d4758e6d89c9
@@ -439,6 +451,10 @@ uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
 # ╠═6d7e2ec6-efca-4c54-95b5-2ca764ee5513
 # ╠═18ed11cd-b607-4ab3-ae6f-6e80e3196230
 # ╠═dee1c0db-bd30-40c6-93d0-07d586b421de
+# ╠═e0b04fbb-d89a-4cf2-a5c5-cc4749daba1b
+# ╠═0e234255-06b4-41e7-82c0-4e3133b67ec6
+# ╠═dc717a99-21b0-40e6-98fc-b066ad9b7bee
+# ╠═600225db-9ce9-4217-8b70-d4476186ad15
 # ╠═10efc046-fd81-4420-82bd-d4758e6d89c9
 # ╠═e6a2e148-a944-465f-b1d0-d3a86795225e
 # ╠═7bcafbdb-dc21-454d-9f7a-6b088e8cf286
