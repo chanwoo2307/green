@@ -23,9 +23,6 @@ using Plots
 # ╔═╡ 7f1d9052-a20e-11ec-0407-3d005a4d4ca4
 md" ## 0308 통계전산 practice "
 
-# ╔═╡ 3e7d6c7e-1997-4657-9fd0-2b7445288fdd
-
-
 # ╔═╡ d0b1ba05-18c4-4f99-87a1-99a28b3cd252
 md"### 플루토의 특징 "
 
@@ -214,13 +211,20 @@ b
 md"#### 색깔선택"
 
 # ╔═╡ c71c5e89-3b0d-49bb-87ea-99349c813867
-@bind col ColorStringPicker() 
+@bind col ColorStringPicker(default="#f90606") 
 
 # ╔═╡ 56cd2ecc-68d9-4fd9-b535-dff7bc3e19ae
 col
 
+# ╔═╡ 84c46a4e-1c8c-4221-9f14-1b66baccbf10
+plot([1,2,3],[4,2,4],color=col,),
+plot([1,2,3],[1,2,3],color="#a35c5c")
+
 # ╔═╡ 7e089d0c-b949-4123-868a-0b7b31aad0dd
-plot([1,2,3],[4,2,4],color=col
+plot([1,2,3],[4,2,4],color=col,width=3,)
+
+# ╔═╡ 34a9d77f-14df-47d6-b4c0-59071f750466
+plot([1,2,3],[4,2,4],color=col,width=5) #선의 굵기
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1141,7 +1145,6 @@ version = "0.9.1+5"
 
 # ╔═╡ Cell order:
 # ╠═7f1d9052-a20e-11ec-0407-3d005a4d4ca4
-# ╠═3e7d6c7e-1997-4657-9fd0-2b7445288fdd
 # ╠═d0b1ba05-18c4-4f99-87a1-99a28b3cd252
 # ╠═6a6597b9-9f7b-43f4-b792-e837c0e168bd
 # ╠═1df9b462-1b1b-4a28-a566-f944e3dbc847
@@ -1204,6 +1207,8 @@ version = "0.9.1+5"
 # ╠═c71c5e89-3b0d-49bb-87ea-99349c813867
 # ╠═56cd2ecc-68d9-4fd9-b535-dff7bc3e19ae
 # ╠═8c686e11-e1db-4928-a171-5c7d12eb1124
+# ╠═84c46a4e-1c8c-4221-9f14-1b66baccbf10
 # ╠═7e089d0c-b949-4123-868a-0b7b31aad0dd
+# ╠═34a9d77f-14df-47d6-b4c0-59071f750466
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
