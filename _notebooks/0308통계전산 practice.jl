@@ -42,7 +42,7 @@ md"1. Julia를 실행한다."
 md"2. import Pluto 를 입력한다."
 
 # ╔═╡ 98980b53-3286-400e-b044-b3b90854073d
-md"Pluto.run() 을 실행하고 조금 기다리면 자동으로 Pluto가 인테넷 창에서 실행된다."
+md"3.Pluto.run() 을 실행하고 조금 기다리면 자동으로 Pluto가 인테넷 창에서 실행된다."
 
 # ╔═╡ c5136944-6409-4f80-9aeb-0eb5a22cacd8
 md"4.new notebook을 통해 플루토 개발 환경을 이용한다."
