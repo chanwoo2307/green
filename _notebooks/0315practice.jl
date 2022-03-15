@@ -241,6 +241,9 @@ Array((1:3) .*2 .+100)
 # ╔═╡ 289f82de-bdaf-4cdb-aafc-1178233f7ee6
 md"### index"
 
+# ╔═╡ ace60dea-b369-4ae0-bad3-92b6a6b20a44
+md"`-` 1차원으로 인덱싱"
+
 # ╔═╡ f119efd9-cb71-4ca0-adbe-8b3cd900d4e7
 A= [1 2 3; 4 5 6; 7 8 9]
 
@@ -251,9 +254,12 @@ A[1]
 A[6] #위에서 아래로 왼쪽에서 오른쪽으로 가면서 숫자가 증가한다.
 
 # ╔═╡ 8c4ce37f-5026-4ba8-a382-8f21dab22b3d
-
+A[1:6]
 
 # ╔═╡ c74d480c-68fc-4b7e-94c6-faf5835533dd
+A[[1,3,5,7]]
+
+# ╔═╡ a103d084-d696-4094-9c13-3e86799494e4
 
 
 # ╔═╡ b1cff612-66dd-462e-95ad-f0dbede3e297
@@ -461,11 +467,13 @@ manifest_format = "2.0"
 # ╠═410427bf-162a-493d-a3f8-d5c5129873f8
 # ╠═0d985f69-5d09-44a5-9867-9845b405e728
 # ╠═289f82de-bdaf-4cdb-aafc-1178233f7ee6
+# ╠═ace60dea-b369-4ae0-bad3-92b6a6b20a44
 # ╠═f119efd9-cb71-4ca0-adbe-8b3cd900d4e7
 # ╠═d34495bd-3d30-49cb-ad32-bfe30441d2e2
 # ╠═61a353c4-63ae-418a-9c11-6a0fd22ff304
 # ╠═8c4ce37f-5026-4ba8-a382-8f21dab22b3d
 # ╠═c74d480c-68fc-4b7e-94c6-faf5835533dd
+# ╠═a103d084-d696-4094-9c13-3e86799494e4
 # ╠═b1cff612-66dd-462e-95ad-f0dbede3e297
 # ╠═b152e92d-afe4-43b1-878c-4a8f67fc5efe
 # ╠═0ca2bc59-6758-410e-abf2-6625cdf85c2e
