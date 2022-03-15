@@ -36,7 +36,7 @@ md"`-` 1x4 matrix = length가 4인 row-vector 선언"
 md"`-` 4x1 matrix = length가 4인 col-vector 선언"
 
 # ╔═╡ 533581ca-7963-414a-a33c-e771d86b8cc2
-[1;2;3;4] #방법 1
+[1;2;3;4] #방법 1 #기호가 한개있으면 열 벡터 선언
 
 # ╔═╡ 8a523bdc-17f1-4d20-93ed-3523ce7a107e
 [1,2,3,4]
