@@ -15,7 +15,7 @@ md"`-` 선언하는 방법"
 
 # ╔═╡ 9d5639bb-dce3-434b-abc5-b6d6d5975aaa
 [1 2 3
- 4 5 6]
+ 4 5 6] #방법 2
 
 # ╔═╡ def50522-fa46-43b4-8bb4-6cacf8ad79a8
 [
@@ -24,22 +24,22 @@ md"`-` 선언하는 방법"
 ]
 
 # ╔═╡ a61c0894-d62f-40e5-91c3-b2567b3b2233
-md"`-` 1x4 matrix = length가 4인 row-vector 선언"
+md"`-` 1x4 matrix = length가 4인 row-vector 행벡터 선언"
 
 # ╔═╡ d9d7c19f-c295-40a9-9b40-f6aa4a543200
-[1 2 3 4]
+[1 2 3 4] #기호가 없거나 짝수개이면 행벡터 이다.
 
 # ╔═╡ 655cb01c-d87e-413b-ac46-0b9c32d232f7
 [1 ;; 2;; 3;; 4] #방법 2
 
 # ╔═╡ 004405ec-da25-4146-b485-bd681fbbaeff
-md"`-` 4x1 matrix = length가 4인 col-vector 선언"
+md"`-` 4x1 matrix = length가 4인 col-vector 열 벡터선언"
 
 # ╔═╡ 533581ca-7963-414a-a33c-e771d86b8cc2
 [1;2;3;4] #방법 1 #기호가 한개있으면 열 벡터 선언
 
 # ╔═╡ 8a523bdc-17f1-4d20-93ed-3523ce7a107e
-[1,2,3,4]
+[1,2,3,4] #방법 2
 
 # ╔═╡ a84d7701-7b97-4060-83ff-dd2bf0ac0030
 [
@@ -56,7 +56,7 @@ md" (4,2)벡터 선언과 잘못된 방법 선언"
 [1 2;2 3; 3 4; 4 5]
 
 # ╔═╡ d370e98a-ee74-4672-9a6c-a21fca404eee
-[1 2,2 3, 3, 4, 4 5]
+[1 2,2 3, 3, 4, 4 5] #이 방법은 잘 못된 방법이다.
 
 # ╔═╡ b65ce2aa-a2d8-4098-8905-7817e562a027
 [
@@ -70,7 +70,7 @@ md" (4,2)벡터 선언과 잘못된 방법 선언"
 md"벡터의 곱셈"
 
 # ╔═╡ feaf8337-64d0-466b-b799-f006eb97b871
-md"`곰셈`"
+md"`곱셈`"
 
 # ╔═╡ 75648574-782b-480f-80e0-1c877d709961
 [1 0; 0 1]
@@ -97,7 +97,7 @@ md"(연산자 사용)"
 [1 2; 3 4 ]
 
 # ╔═╡ 5a475d17-9df6-4ba1-a08d-c302ebbd6721
-[1 2; 3 4]'
+[1 2; 3 4]' #트랜스포즈
 
 # ╔═╡ f761c73e-abeb-482c-a5e6-2da32faef86e
 [1,2,3,4]
@@ -119,31 +119,33 @@ md"""
 """
 
 # ╔═╡ 4051f3d7-148f-4134-a033-bcc5d14b8859
-hcat([1,2,3],[4,5,6])
+hcat([1,2,3],[4,5,6]) # 3*1 col-vec (hat) 3*1 col-vec => 3*2 matrix
 
 # ╔═╡ a0d94030-0035-48ce-a172-82542f557c0b
 hcat([1,2,3],[4,5,6],[7,8,9]) 
 #3*1 col-vec (hat) 3*1 col-vec (hat) 3*1 col-vec => 3*3 matrix
 
 # ╔═╡ 4eb47f90-59f7-4da7-8850-ea7ae0a3a933
-hcat([1 2; 3 4; 5 6],[10,20,30])
+hcat([1 2; 3 4; 5 6],[10,20,30]) ##3*2 matrix (hat) 3*1 col-vec => 3*3 matrix
 
 # ╔═╡ 982cfca8-55bb-418b-a4dd-c821bff49d7c
 hcat([1 2; 3 4; 5 6],[7 8 9])
+#3*2 matrix (hat) 1*3 row-vec => 불가능
 
 # ╔═╡ 3f35ce65-a517-4e26-8f3c-d33c80ea61aa
 vcat([1 2 3],[4 5 6])
-# 1*4 row-vec vcat 1*4 row-vec => 2*4 matrix 
+# 1*3 row-vec vcat 1*3 row-vec => 2*3 matrix 
 
 # ╔═╡ 4ff73b0d-2300-4179-98a4-0458cc33546b
 hcat(vcat([1 2 3],[4 5 6]),[1 ,2])
-# 1*4 row-vec vcat 1*4 row-vec => 2*4 matrix 
-#2*4 matrix hcat  2*1
+# 1*3 row-vec vcat 1*3 row-vec => 2*3 matrix 
+#2*3 matrix hcat  2*1 col-vec => 2*4  matrix
 
 # ╔═╡ 10aca34d-58d6-450c-96ec-04a90b9dd205
 vcat(hcat(vcat([1 2 3],[4 5 6]),[1 ,2]),[1 2 3 4 ])
-# 1*4 row-vec vcat 1*4 row-vec => 2*4 matrix 
-#2*4 matrix hcat  2*1
+# 1*3 row-vec vcat 1*3 row-vec => 2*3 matrix 
+#2*3 matrix hcat  2*1 col-vec => 2*4 matrix
+#2*4 matrix vcat 1*4 row-vec => 4*4 matrix
 
 # ╔═╡ 327d505d-ee2f-49ae-a6e6-ba3c96d04ea6
 md"""
@@ -186,7 +188,7 @@ reshape(1:6,(3,2)) #1부터 6을 (3,2)의 matrix로 바꿔라
 reshape([1,2,3,4,5,6],(2,3))
 
 # ╔═╡ eeb572d2-74b2-436a-9fd4-b00cc3f0c633
-reshape(1:8, (2,2,2))
+reshape(1:8, (2,2,2)) #3차원
 
 # ╔═╡ edc612a9-86a4-45f3-ba2e-3615bdedd2f9
 reshape(1:24, (2,2,2,3)) #4차원
@@ -231,6 +233,42 @@ Array((1:3)+(1:3))
 #   =2 3 4 따라서 (2:4)
 
 # ╔═╡ 410427bf-162a-493d-a3f8-d5c5129873f8
+(1:3) .*2 .+100
+
+# ╔═╡ 0d985f69-5d09-44a5-9867-9845b405e728
+Array((1:3) .*2 .+100)
+
+# ╔═╡ 289f82de-bdaf-4cdb-aafc-1178233f7ee6
+md"### index"
+
+# ╔═╡ f119efd9-cb71-4ca0-adbe-8b3cd900d4e7
+A= [1 2 3; 4 5 6; 7 8 9]
+
+# ╔═╡ d34495bd-3d30-49cb-ad32-bfe30441d2e2
+A[1]
+
+# ╔═╡ 61a353c4-63ae-418a-9c11-6a0fd22ff304
+A[6] #위에서 아래로 왼쪽에서 오른쪽으로 가면서 숫자가 증가한다.
+
+# ╔═╡ 8c4ce37f-5026-4ba8-a382-8f21dab22b3d
+
+
+# ╔═╡ c74d480c-68fc-4b7e-94c6-faf5835533dd
+
+
+# ╔═╡ b1cff612-66dd-462e-95ad-f0dbede3e297
+
+
+# ╔═╡ b152e92d-afe4-43b1-878c-4a8f67fc5efe
+
+
+# ╔═╡ 0ca2bc59-6758-410e-abf2-6625cdf85c2e
+
+
+# ╔═╡ 4d67c74a-11e1-4e8c-8928-0e44a30432cf
+
+
+# ╔═╡ 0f9d4b89-421d-4a8a-8b80-7174773dd80f
 
 
 # ╔═╡ 4d24d35b-8167-4317-87ab-01f0f8c4ac25
@@ -421,6 +459,18 @@ manifest_format = "2.0"
 # ╠═90e87be7-ca4f-42aa-9e16-d1d7a25f9f29
 # ╠═9535d350-fc59-4126-b3c1-d0b5888c2091
 # ╠═410427bf-162a-493d-a3f8-d5c5129873f8
+# ╠═0d985f69-5d09-44a5-9867-9845b405e728
+# ╠═289f82de-bdaf-4cdb-aafc-1178233f7ee6
+# ╠═f119efd9-cb71-4ca0-adbe-8b3cd900d4e7
+# ╠═d34495bd-3d30-49cb-ad32-bfe30441d2e2
+# ╠═61a353c4-63ae-418a-9c11-6a0fd22ff304
+# ╠═8c4ce37f-5026-4ba8-a382-8f21dab22b3d
+# ╠═c74d480c-68fc-4b7e-94c6-faf5835533dd
+# ╠═b1cff612-66dd-462e-95ad-f0dbede3e297
+# ╠═b152e92d-afe4-43b1-878c-4a8f67fc5efe
+# ╠═0ca2bc59-6758-410e-abf2-6625cdf85c2e
+# ╠═4d67c74a-11e1-4e8c-8928-0e44a30432cf
+# ╠═0f9d4b89-421d-4a8a-8b80-7174773dd80f
 # ╠═4d24d35b-8167-4317-87ab-01f0f8c4ac25
 # ╠═2cae82a9-be39-4533-878c-bbf5d85958e9
 # ╠═e61a2b05-7320-4b5a-98d8-8abdb0d43d00
