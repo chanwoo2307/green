@@ -42,6 +42,14 @@ md"`-` 4x1 matrix = length가 4인 col-vector 선언"
 [1,2,3,4]
 
 # ╔═╡ a84d7701-7b97-4060-83ff-dd2bf0ac0030
+[
+	1
+	2
+	3
+	4
+]
+
+# ╔═╡ cbd188a8-06c6-4a15-b8fa-0fa2c569b1b7
 
 
 # ╔═╡ e004b294-b396-4700-9e86-8eaf9086cbf5
@@ -102,6 +110,7 @@ manifest_format = "2.0"
 # ╠═533581ca-7963-414a-a33c-e771d86b8cc2
 # ╠═8a523bdc-17f1-4d20-93ed-3523ce7a107e
 # ╠═a84d7701-7b97-4060-83ff-dd2bf0ac0030
+# ╠═cbd188a8-06c6-4a15-b8fa-0fa2c569b1b7
 # ╠═e004b294-b396-4700-9e86-8eaf9086cbf5
 # ╠═5aa03a70-3918-40f2-b764-9f5fba0a270f
 # ╠═5bd38d3c-392a-4ac2-9b39-f693bf9cfbc9
