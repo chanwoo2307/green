@@ -393,7 +393,13 @@ md"$x \in (-1,3)$ 일 경우, (x,f(x))의 그래프를 그려서 제출"
 function1= (x ->x^2)∘(x -> x-1)
 
 # ╔═╡ 576529af-6b4d-4ba7-b314-ae0d74c3cbf5
-function1(-1)
+function1(x=1:3)
+
+# ╔═╡ c908fa12-e10f-444c-bbf1-1ec61c284af2
+
+
+# ╔═╡ 51d1df35-5777-4fce-87f5-bec1268b7c9a
+
 
 # ╔═╡ 94e68eda-2bf8-4776-a282-12540444eb31
 
@@ -547,6 +553,8 @@ manifest_format = "2.0"
 # ╠═e61d9fa4-5c96-4640-ab95-05340d292839
 # ╠═30667964-ee3f-419f-b3f6-567a94ac1997
 # ╠═576529af-6b4d-4ba7-b314-ae0d74c3cbf5
+# ╠═c908fa12-e10f-444c-bbf1-1ec61c284af2
+# ╠═51d1df35-5777-4fce-87f5-bec1268b7c9a
 # ╠═94e68eda-2bf8-4776-a282-12540444eb31
 # ╠═5bc2b1da-d595-4028-9258-2196fa2a2d02
 # ╠═3aa0cb46-c3ef-4ffe-9289-56d2e1890fe0
