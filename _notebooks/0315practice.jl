@@ -119,7 +119,7 @@ hcat([1,2,3],[4,5,6])
 
 # ╔═╡ a0d94030-0035-48ce-a172-82542f557c0b
 hcat([1,2,3],[4,5,6],[7,8,9]) 
-#3*1 col-vec (hat) 3*1 col-vec (hat) 3*1 col-vec => 3*3 amtrix
+#3*1 col-vec (hat) 3*1 col-vec (hat) 3*1 col-vec => 3*3 matrix
 
 # ╔═╡ 4eb47f90-59f7-4da7-8850-ea7ae0a3a933
 hcat([1 2; 3 4; 5 6],[10,20,30])
