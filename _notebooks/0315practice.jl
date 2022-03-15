@@ -14,6 +14,10 @@ md"`-` 선언하는 방법"
 [1 2 3; 4 5 6] # ;는 엔터처럼 생각해도 된다.
 
 # ╔═╡ 9d5639bb-dce3-434b-abc5-b6d6d5975aaa
+[1 2 3
+ 4 5 6]
+
+# ╔═╡ def50522-fa46-43b4-8bb4-6cacf8ad79a8
 
 
 # ╔═╡ 5bd38d3c-392a-4ac2-9b39-f693bf9cfbc9
@@ -60,6 +64,7 @@ manifest_format = "2.0"
 # ╠═d9754372-0499-4b42-afeb-ef32bbda8cc1
 # ╠═d364b262-0fb4-4926-a680-764446469b4b
 # ╠═9d5639bb-dce3-434b-abc5-b6d6d5975aaa
+# ╠═def50522-fa46-43b4-8bb4-6cacf8ad79a8
 # ╠═5bd38d3c-392a-4ac2-9b39-f693bf9cfbc9
 # ╠═0aa954af-60f5-412c-87c9-2688bd1c80bc
 # ╠═227f5fcf-c805-412c-939a-0f39be6a7d1b
