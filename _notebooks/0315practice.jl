@@ -33,6 +33,15 @@ md"`-` 1x4 matrix = length가 4인 row-vector 선언"
 [1 ;; 2;; 3;; 4] #방법 2
 
 # ╔═╡ 004405ec-da25-4146-b485-bd681fbbaeff
+md"`-` 4x1 matrix = length가 4인 col-vector 선언"
+
+# ╔═╡ 533581ca-7963-414a-a33c-e771d86b8cc2
+[1;2;3;4] #방법 1
+
+# ╔═╡ 8a523bdc-17f1-4d20-93ed-3523ce7a107e
+[1,2,3,4]
+
+# ╔═╡ a84d7701-7b97-4060-83ff-dd2bf0ac0030
 
 
 # ╔═╡ e004b294-b396-4700-9e86-8eaf9086cbf5
@@ -90,6 +99,9 @@ manifest_format = "2.0"
 # ╠═d9d7c19f-c295-40a9-9b40-f6aa4a543200
 # ╠═655cb01c-d87e-413b-ac46-0b9c32d232f7
 # ╠═004405ec-da25-4146-b485-bd681fbbaeff
+# ╠═533581ca-7963-414a-a33c-e771d86b8cc2
+# ╠═8a523bdc-17f1-4d20-93ed-3523ce7a107e
+# ╠═a84d7701-7b97-4060-83ff-dd2bf0ac0030
 # ╠═e004b294-b396-4700-9e86-8eaf9086cbf5
 # ╠═5aa03a70-3918-40f2-b764-9f5fba0a270f
 # ╠═5bd38d3c-392a-4ac2-9b39-f693bf9cfbc9
