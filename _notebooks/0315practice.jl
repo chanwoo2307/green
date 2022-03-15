@@ -198,6 +198,24 @@ md"### 벡터와 매트릭스(자투리)"
 md"##### Range"
 
 # ╔═╡ dae9b882-c273-472a-ae59-808df92c2af4
+1:3
+
+# ╔═╡ 995ba2bb-a34d-4c8d-b1e0-cc564c4968ba
+typeof(1:3)
+
+# ╔═╡ eb8b9773-8f7f-4e6c-842c-97a949505539
+Array(1:3)
+
+# ╔═╡ 290933f4-2a21-4b7b-9c0d-09ba6a87bd39
+typeof(Array(1:3))
+
+# ╔═╡ d545096b-486a-49d4-8f49-e99b8e224fe3
+
+
+# ╔═╡ ce5d30b1-f136-46d2-bcec-1a302e528c47
+
+
+# ╔═╡ db9fea2d-fe8f-4259-98a2-baecb82318ce
 
 
 # ╔═╡ 629360d7-8635-4aa1-ab67-df9036cd1598
@@ -355,6 +373,12 @@ manifest_format = "2.0"
 # ╠═6041089c-c5fe-4d20-97ec-9781a5102d86
 # ╠═7daba03f-82c0-4251-a949-860ff0092ce8
 # ╠═dae9b882-c273-472a-ae59-808df92c2af4
+# ╠═995ba2bb-a34d-4c8d-b1e0-cc564c4968ba
+# ╠═eb8b9773-8f7f-4e6c-842c-97a949505539
+# ╠═290933f4-2a21-4b7b-9c0d-09ba6a87bd39
+# ╠═d545096b-486a-49d4-8f49-e99b8e224fe3
+# ╠═ce5d30b1-f136-46d2-bcec-1a302e528c47
+# ╠═db9fea2d-fe8f-4259-98a2-baecb82318ce
 # ╠═629360d7-8635-4aa1-ab67-df9036cd1598
 # ╠═c9ecb9f3-91f4-478a-9fd1-a9946e2d4da1
 # ╠═02e3ea34-321e-41de-a3f6-894ac97f93c9
