@@ -13,9 +13,6 @@ using Plots
 # ╔═╡ 4fc833b0-a467-11ec-04c5-61fe210806e8
 md"### matrix 자세히"
 
-# ╔═╡ 4f226f58-e20e-48a8-94ea-e9a53d4603a5
-
-
 # ╔═╡ d9754372-0499-4b42-afeb-ef32bbda8cc1
 md"`-` 선언하는 방법" 
 
