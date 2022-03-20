@@ -263,15 +263,6 @@ col
 # ╔═╡ e24e0acd-0784-4782-a1fc-cb7e8ea8bb24
 plot([1,2,3],[4,2,4],color=col)
 
-# ╔═╡ ca028fc9-87e6-452d-a638-8616a537a03c
-
-
-# ╔═╡ 1fe33468-5a97-4a7e-83a0-a8e9da1b5ae4
-
-
-# ╔═╡ 58444b8c-2561-4af0-aba3-bf731ac41895
-
-
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
