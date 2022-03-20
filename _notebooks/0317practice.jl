@@ -316,9 +316,6 @@ md"""
 # ╔═╡ 25c72214-3ca8-4ba6-b786-6abe37f95ef8
 mp≤2 ? println("2보다 작거나 같음") : println("2보다큼") #if
 
-# ╔═╡ bc75aaf5-f820-4141-86a2-0ed41a66fcfb
-
-
 # ╔═╡ f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
 if mp ≤ 2
 	println("2보다 작거나 같음")
@@ -1364,7 +1361,6 @@ version = "0.9.1+5"
 # ╠═e378679e-44dd-4fd8-94db-37ae1b6405b1
 # ╠═0bc36bc4-47a5-4931-96e1-cf456059d824
 # ╠═25c72214-3ca8-4ba6-b786-6abe37f95ef8
-# ╠═bc75aaf5-f820-4141-86a2-0ed41a66fcfb
 # ╠═f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
 # ╠═dc3df5c1-a31e-45e2-aa88-ae7cf9354990
 # ╠═47453612-30f4-4779-a363-f63d9025eb75
