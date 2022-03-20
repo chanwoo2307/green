@@ -4,6 +4,16 @@
 using Markdown
 using InteractiveUtils
 
+# This Pluto notebook uses @bind for interactivity. When running this notebook outside of Pluto, the following 'mock version' of @bind gives bound variables a default value (instead of an error).
+macro bind(def, element)
+    quote
+        local iv = try Base.loaded_modules[Base.PkgId(Base.UUID("6e696c72-6542-2067-7265-42206c756150"), "AbstractPlutoDingetjes")].Bonds.initial_value catch; b -> missing; end
+        local el = $(esc(element))
+        global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : iv(el)
+        el
+    end
+end
+
 # ╔═╡ ce7fe23d-b4cc-4de9-acc6-ab7c394af4d8
 using Plots
 
@@ -301,10 +311,10 @@ md"""
 """
 
 # ╔═╡ 0bc36bc4-47a5-4931-96e1-cf456059d824
-mp=1
+@bind mp Slider(1:10, show_value=true)
 
 # ╔═╡ 25c72214-3ca8-4ba6-b786-6abe37f95ef8
-mp≤2 ? println("2보다 작거나 같음") : println("2보다큼")
+mp≤2 ? println("2보다 작거나 같음") : println("2보다큼") #if
 
 # ╔═╡ f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
 if mp≤ 2
