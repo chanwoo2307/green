@@ -74,13 +74,13 @@ plot(x,y)
 md"풀이 2"
 
 # ╔═╡ 52b3e381-e014-43d9-9d22-32aa5c279aaf
-plot(x,g.(x)) #중요
+plot(x,g.(x)) #중요 g.(x)는 함수 g가 x의 각각 적용된 값임
 
 # ╔═╡ 20f7dfc2-5bc5-4d45-b04a-9c03ac5a85b7
 md"풀이 3"
 
 # ╔═╡ 426156d8-cd01-4fdc-b33b-03c508702571
-plot(x,g)
+plot(x,g) #배열과 함수를 선언하면 그림이 그려진다
 
 # ╔═╡ a6b2729b-fd54-4efd-b555-18f2e76cec33
 plot(g,x)
