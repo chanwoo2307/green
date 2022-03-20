@@ -307,6 +307,13 @@ n=3
 n≤2 ? println("2보다 작거나 같음") : println("2보다큼")
 
 # ╔═╡ f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
+if n≤ 2
+	println("2보다 작거나 같음")
+else 
+	println("2보다큼")
+end
+
+# ╔═╡ 7a5ef9d8-f1e2-4a7f-8cc8-beebc131880c
 
 
 # ╔═╡ dfc7d49b-8b93-484a-b507-02fe03e5e4f5
@@ -1355,6 +1362,7 @@ version = "0.9.1+5"
 # ╠═0bc36bc4-47a5-4931-96e1-cf456059d824
 # ╠═25c72214-3ca8-4ba6-b786-6abe37f95ef8
 # ╠═f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
+# ╠═7a5ef9d8-f1e2-4a7f-8cc8-beebc131880c
 # ╠═dfc7d49b-8b93-484a-b507-02fe03e5e4f5
 # ╠═72a60520-105c-483d-9ee8-ddb6c6805f99
 # ╠═3adfd752-aea8-4d82-8063-c799105837de
