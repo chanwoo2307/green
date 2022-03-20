@@ -7,6 +7,9 @@ using InteractiveUtils
 # ╔═╡ ce7fe23d-b4cc-4de9-acc6-ab7c394af4d8
 using Plots
 
+# ╔═╡ e378679e-44dd-4fd8-94db-37ae1b6405b1
+using PlutoUI
+
 # ╔═╡ bf6b2464-0345-4492-b3e4-b9c8b28f5a23
 z=1
 
@@ -268,6 +271,62 @@ md"""
 # ╔═╡ b257e9a1-632b-489f-bde7-234d3d99698e
 md"식이 길어질 때 편리하게 사용할 수 있다."
 
+# ╔═╡ 1705e6d4-fa8c-4293-a6f6-cab825b8dea2
+md"""
+`-` (예제)피보나치 수열을 정의하여 보자.
+"""
+
+# ╔═╡ cc29422a-eb26-48a6-81e4-192f8a90632d
+md"""
+`-` 일반항의형태를 표현하기 어려운 수열을 정의해보자
+"""
+
+# ╔═╡ b3950d82-ced6-46b6-a23e-488b858532ab
+n ->2n-1
+
+# ╔═╡ 551c4048-1c16-457d-8b8f-214bfcd1154f
+(n ->2n-1)(3)
+
+# ╔═╡ 4fb3746e-89c3-4737-b092-3a585d8a2a8c
+md"""
+[예비학습] 피보나치 수열의 정의
+(1) $a_1=a_2=1$
+
+(2) $n\geq 3$일 경우 $a_n=a_{n-1}+a_{n-2}$
+"""
+
+# ╔═╡ 900f37d9-f884-4d35-acbb-7c757335ec76
+md"""
+[예비학습 2] if문
+"""
+
+# ╔═╡ 0bc36bc4-47a5-4931-96e1-cf456059d824
+n=3
+
+# ╔═╡ 25c72214-3ca8-4ba6-b786-6abe37f95ef8
+n≤2 ? println("2보다 작거나 같음") : println("2보다큼")
+
+# ╔═╡ f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
+
+
+# ╔═╡ dfc7d49b-8b93-484a-b507-02fe03e5e4f5
+
+
+# ╔═╡ 72a60520-105c-483d-9ee8-ddb6c6805f99
+
+
+# ╔═╡ 3adfd752-aea8-4d82-8063-c799105837de
+
+
+# ╔═╡ d4c7387a-a4b9-4d29-8fde-225f1f9014a2
+
+
+# ╔═╡ f76515ff-0884-4387-8440-cac2d37b2718
+
+
+# ╔═╡ f8638e74-0adb-4aeb-bc49-96d0a7f5e1ff
+
+
 # ╔═╡ 553254ae-2484-454b-9e85-915f50868430
 md"""
 ### 숙제
@@ -291,9 +350,11 @@ scatter(1:10,a)
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
 Plots = "~1.27.1"
+PlutoUI = "~0.7.37"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
@@ -302,6 +363,12 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.7.2"
 manifest_format = "2.0"
+
+[[deps.AbstractPlutoDingetjes]]
+deps = ["Pkg"]
+git-tree-sha1 = "8eaf9f1b4921132a4cff3f36a1d9ba923b14a481"
+uuid = "6e696c72-6542-2067-7265-42206c756150"
+version = "1.1.4"
 
 [[deps.Adapt]]
 deps = ["LinearAlgebra"]
@@ -526,6 +593,23 @@ deps = ["Artifacts", "Cairo_jll", "Fontconfig_jll", "FreeType2_jll", "Glib_jll",
 git-tree-sha1 = "129acf094d168394e80ee1dc4bc06ec835e510a3"
 uuid = "2e76f6c2-a576-52d4-95c1-20adfe4de566"
 version = "2.8.1+1"
+
+[[deps.Hyperscript]]
+deps = ["Test"]
+git-tree-sha1 = "8d511d5b81240fc8e6802386302675bdf47737b9"
+uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
+version = "0.0.4"
+
+[[deps.HypertextLiteral]]
+git-tree-sha1 = "2b078b5a615c6c0396c77810d92ee8c6f470d238"
+uuid = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
+version = "0.9.3"
+
+[[deps.IOCapture]]
+deps = ["Logging", "Random"]
+git-tree-sha1 = "f7be53659ab06ddc986428d3a9dcc95f6fa6705a"
+uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
+version = "0.2.2"
 
 [[deps.IniFile]]
 git-tree-sha1 = "f550e6e32074c939295eb5ea6de31849ac2c9625"
@@ -795,6 +879,12 @@ deps = ["Base64", "Contour", "Dates", "Downloads", "FFMPEG", "FixedPointNumbers"
 git-tree-sha1 = "1690b713c3b460c955a2957cd7487b1b725878a7"
 uuid = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 version = "1.27.1"
+
+[[deps.PlutoUI]]
+deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "Markdown", "Random", "Reexport", "UUIDs"]
+git-tree-sha1 = "bf0a1121af131d9974241ba53f601211e9303a9e"
+uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
+version = "0.7.37"
 
 [[deps.Preferences]]
 deps = ["TOML"]
@@ -1255,6 +1345,22 @@ version = "0.9.1+5"
 # ╠═95d02366-5c64-4d61-8fd0-59a5566718ab
 # ╠═d5a14d00-69a6-438e-a170-29fb05ad3f6c
 # ╠═b257e9a1-632b-489f-bde7-234d3d99698e
+# ╠═1705e6d4-fa8c-4293-a6f6-cab825b8dea2
+# ╠═cc29422a-eb26-48a6-81e4-192f8a90632d
+# ╠═b3950d82-ced6-46b6-a23e-488b858532ab
+# ╠═551c4048-1c16-457d-8b8f-214bfcd1154f
+# ╠═4fb3746e-89c3-4737-b092-3a585d8a2a8c
+# ╠═900f37d9-f884-4d35-acbb-7c757335ec76
+# ╠═e378679e-44dd-4fd8-94db-37ae1b6405b1
+# ╠═0bc36bc4-47a5-4931-96e1-cf456059d824
+# ╠═25c72214-3ca8-4ba6-b786-6abe37f95ef8
+# ╠═f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
+# ╠═dfc7d49b-8b93-484a-b507-02fe03e5e4f5
+# ╠═72a60520-105c-483d-9ee8-ddb6c6805f99
+# ╠═3adfd752-aea8-4d82-8063-c799105837de
+# ╠═d4c7387a-a4b9-4d29-8fde-225f1f9014a2
+# ╠═f76515ff-0884-4387-8440-cac2d37b2718
+# ╠═f8638e74-0adb-4aeb-bc49-96d0a7f5e1ff
 # ╟─553254ae-2484-454b-9e85-915f50868430
 # ╠═9552a3f5-4859-4455-be3b-9e2942b7ec83
 # ╠═3f506a6d-6e5f-431a-9cfb-34e5f82d464c
