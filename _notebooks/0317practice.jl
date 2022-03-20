@@ -4,6 +4,16 @@
 using Markdown
 using InteractiveUtils
 
+# This Pluto notebook uses @bind for interactivity. When running this notebook outside of Pluto, the following 'mock version' of @bind gives bound variables a default value (instead of an error).
+macro bind(def, element)
+    quote
+        local iv = try Base.loaded_modules[Base.PkgId(Base.UUID("6e696c72-6542-2067-7265-42206c756150"), "AbstractPlutoDingetjes")].Bonds.initial_value catch; b -> missing; end
+        local el = $(esc(element))
+        global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : iv(el)
+        el
+    end
+end
+
 # ╔═╡ ce7fe23d-b4cc-4de9-acc6-ab7c394af4d8
 using Plots
 
@@ -300,39 +310,15 @@ md"""
 [예비학습 2] if문
 """
 
-# ╔═╡ 0bc36bc4-47a5-4931-96e1-cf456059d824
-n=3
-
 # ╔═╡ 25c72214-3ca8-4ba6-b786-6abe37f95ef8
-n≤2 ? println("2보다 작거나 같음") : println("2보다큼")
+p≤2 ? println("2보다 작거나 같음") : println("2보다큼")
 
 # ╔═╡ f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
-if n≤ 2
+if p≤ 2
 	println("2보다 작거나 같음")
 else 
 	println("2보다큼")
 end
-
-# ╔═╡ 7a5ef9d8-f1e2-4a7f-8cc8-beebc131880c
-
-
-# ╔═╡ dfc7d49b-8b93-484a-b507-02fe03e5e4f5
-
-
-# ╔═╡ 72a60520-105c-483d-9ee8-ddb6c6805f99
-
-
-# ╔═╡ 3adfd752-aea8-4d82-8063-c799105837de
-
-
-# ╔═╡ d4c7387a-a4b9-4d29-8fde-225f1f9014a2
-
-
-# ╔═╡ f76515ff-0884-4387-8440-cac2d37b2718
-
-
-# ╔═╡ f8638e74-0adb-4aeb-bc49-96d0a7f5e1ff
-
 
 # ╔═╡ 553254ae-2484-454b-9e85-915f50868430
 md"""
@@ -352,6 +338,12 @@ a(n) = n ≤ 1 ? 2 : a(n-1)+3
 
 # ╔═╡ 3f506a6d-6e5f-431a-9cfb-34e5f82d464c
 scatter(1:10,a)
+
+# ╔═╡ 0bc36bc4-47a5-4931-96e1-cf456059d824
+p=1
+
+# ╔═╡ bbda1840-b9ae-4fd1-81a9-b094f70195e7
+@bind p Slider(1:10, show_value=true)
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1359,16 +1351,10 @@ version = "0.9.1+5"
 # ╠═4fb3746e-89c3-4737-b092-3a585d8a2a8c
 # ╠═900f37d9-f884-4d35-acbb-7c757335ec76
 # ╠═e378679e-44dd-4fd8-94db-37ae1b6405b1
+# ╠═bbda1840-b9ae-4fd1-81a9-b094f70195e7
 # ╠═0bc36bc4-47a5-4931-96e1-cf456059d824
 # ╠═25c72214-3ca8-4ba6-b786-6abe37f95ef8
 # ╠═f8a4af3f-b7a4-47e3-b19a-a42ca769ef3d
-# ╠═7a5ef9d8-f1e2-4a7f-8cc8-beebc131880c
-# ╠═dfc7d49b-8b93-484a-b507-02fe03e5e4f5
-# ╠═72a60520-105c-483d-9ee8-ddb6c6805f99
-# ╠═3adfd752-aea8-4d82-8063-c799105837de
-# ╠═d4c7387a-a4b9-4d29-8fde-225f1f9014a2
-# ╠═f76515ff-0884-4387-8440-cac2d37b2718
-# ╠═f8638e74-0adb-4aeb-bc49-96d0a7f5e1ff
 # ╟─553254ae-2484-454b-9e85-915f50868430
 # ╠═9552a3f5-4859-4455-be3b-9e2942b7ec83
 # ╠═3f506a6d-6e5f-431a-9cfb-34e5f82d464c
