@@ -47,7 +47,7 @@ rand(100).<0.37 #0.37보다 작은것만 성공
 
 # ╔═╡ d8514223-2b85-43e9-b8dd-33b711e13d9a
 let
-	n=100
+	n=10000
 	p=0.37
 	method1 = rand(Bernoulli(p),n)
 	method2= rand(n) .<0.37
@@ -55,10 +55,33 @@ let
 
 end
 
-# ╔═╡ 671c23ab-bd9c-4c4b-8f0c-01c3da7a81a0
+# ╔═╡ e01f719c-3731-4cc5-861d-d103deb760c4
+md"let와 end 사이에 선언된 변수들은 지역변수처럼 그 안에서만 유의하다"
 
+# ╔═╡ 671c23ab-bd9c-4c4b-8f0c-01c3da7a81a0
+let 
+	n=1000
+	p=0.5
+	X=rand(Bernoulli(p),n)
+	md"""
+	`-` 평균과 분산의 추정 
+	- mean: $p
+	- mean est: $(mean(X))
+	- variance: $(p*(1-p))
+	- variance est: $(var(X))
+	"""
+end 
+
+# ╔═╡ 91b592ed-60b8-477e-8bbd-a61476f558a0
+md"분산의 그래프"
 
 # ╔═╡ 1785e48d-af75-4b50-b525-097f9106b1de
+let 
+	p=0:0.01:1 
+	plot(p, p -> p*(1-p))
+end 
+
+# ╔═╡ 3382fd20-fde0-43a7-9aa4-3f55f53a9273
 
 
 # ╔═╡ f5b0506b-dc4b-4ef7-9625-2bb12e7a333d
@@ -1087,8 +1110,11 @@ version = "0.9.1+5"
 # ╠═f9d91fde-c42f-44df-b1e6-e4530863e355
 # ╠═e62dc386-b050-46be-a258-e3c73a895207
 # ╠═d8514223-2b85-43e9-b8dd-33b711e13d9a
+# ╠═e01f719c-3731-4cc5-861d-d103deb760c4
 # ╠═671c23ab-bd9c-4c4b-8f0c-01c3da7a81a0
+# ╠═91b592ed-60b8-477e-8bbd-a61476f558a0
 # ╠═1785e48d-af75-4b50-b525-097f9106b1de
+# ╠═3382fd20-fde0-43a7-9aa4-3f55f53a9273
 # ╠═f5b0506b-dc4b-4ef7-9625-2bb12e7a333d
 # ╠═101bc77d-c611-4342-a5f6-140480aa8aec
 # ╠═6f0b29ba-48b7-469d-a407-04eec7a418ea
