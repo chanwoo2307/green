@@ -108,22 +108,25 @@ histogram(X3)#방법 3의 히스토그램
 # ╔═╡ b074c942-dc2b-4add-ba70-a69980e6aa29
 md"""
 
-mean X_1 = $(mean(X1))
-var X_1 = $(var(X1))
+- mean X1 = $(mean(X1))
+- var X1 = $(var(X1))
 
 """
 
 # ╔═╡ 49b768dc-e349-4159-873b-e4146b0f259a
 md"""
-- mean X_2 = $(mean(X2))
-- var X_2 = $(var(X2))
+- mean X2 = $(mean(X2))
+- var X2 = $(var(X2))
 """
 
 # ╔═╡ c3b80fe3-8f88-4ea3-8d40-a1a1402cdf02
 md"""
-mean X_3: $(mean(X3))
-var X_3: $(var(X3))
+- mean X3: $(mean(X3))
+- var X3: $(var(X3))
 """ 
+
+# ╔═╡ 61e8af5e-b735-4b25-a908-77d19f1dd3cd
+
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -1157,5 +1160,6 @@ version = "0.9.1+5"
 # ╠═b074c942-dc2b-4add-ba70-a69980e6aa29
 # ╠═49b768dc-e349-4159-873b-e4146b0f259a
 # ╠═c3b80fe3-8f88-4ea3-8d40-a1a1402cdf02
+# ╠═61e8af5e-b735-4b25-a908-77d19f1dd3cd
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
