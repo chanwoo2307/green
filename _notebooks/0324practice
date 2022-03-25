@@ -28,6 +28,12 @@ md"""
 """
 
 # ╔═╡ 328c10d5-61d7-43a1-9dc6-824d2be7afec
+rand(Exponential(10),100)
+
+# ╔═╡ ddff69be-08f6-4231-a848-71106d82b78e
+
+
+# ╔═╡ 79d5da0a-67ff-47a1-a761-3ffd74add685
 
 
 # ╔═╡ 90a5dd8f-04e0-4529-bb4b-c4236eef46a0
@@ -74,6 +80,8 @@ manifest_format = "2.0"
 # ╠═e1bd376e-8277-45ea-89d4-44b2f83a4798
 # ╠═512ccc60-7f22-4b98-b632-46b39fa30da1
 # ╠═328c10d5-61d7-43a1-9dc6-824d2be7afec
+# ╠═ddff69be-08f6-4231-a848-71106d82b78e
+# ╠═79d5da0a-67ff-47a1-a761-3ffd74add685
 # ╠═90a5dd8f-04e0-4529-bb4b-c4236eef46a0
 # ╠═cd4018b1-895f-4c78-b79e-8ab167476944
 # ╠═4c0677da-73b0-43b7-a4fd-1a41975df0f7
