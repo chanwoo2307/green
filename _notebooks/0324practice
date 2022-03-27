@@ -7,8 +7,33 @@ using InteractiveUtils
 # ╔═╡ 1c20bae0-7091-4206-9e46-4f301530dd2b
 using Plots, Distributions, PlutoUI
 
+# ╔═╡ 80bb4300-f32c-4905-86c2-a5baaa793c16
+md"""
+3월 24일 연습
+"""
+
 # ╔═╡ ffa2911d-0c0e-4692-bbca-d9221d7c6ad6
-plots.plotly()
+Plots.plotly()
+
+# ╔═╡ a81b1b6e-1217-433b-938d-71fb2b5b1f43
+md"""
+### 포아송 분포
+"""
+
+# ╔═╡ 519e0320-793f-4129-be8b-2d3d5a9f329d
+md"""
+`-` 포아송분포의 요약 
+- X의의미: 발생횟수의 평균이 λ인 분포에서 실제 발생횟수를 X라고 한다. 
+- X의범위: 발생안할수도 있으므로 X=0이 가능. 따라서 X=0,1,2,3,... 
+- 파라메터의 의미와 범위: λ = 평균적인 발생횟수; λ>0. 
+- pdf: 
+- mgf: 
+- E(X): λ
+- V(X): λ
+"""
+
+# ╔═╡ e6dd0a4c-d791-407d-b818-5b2fc3d8e66b
+
 
 # ╔═╡ 4b7a431d-ddba-46c5-8050-8e480f241cdb
 
@@ -1073,6 +1098,7 @@ version = "0.9.1+5"
 # ╠═ffa2911d-0c0e-4692-bbca-d9221d7c6ad6
 # ╠═a81b1b6e-1217-433b-938d-71fb2b5b1f43
 # ╠═519e0320-793f-4129-be8b-2d3d5a9f329d
+# ╠═e6dd0a4c-d791-407d-b818-5b2fc3d8e66b
 # ╠═4b7a431d-ddba-46c5-8050-8e480f241cdb
 # ╠═63bfb616-12f4-4869-b376-b4afd60e9463
 # ╠═cf09aa17-f924-4ce7-98f2-89a694c6f13b
