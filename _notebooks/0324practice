@@ -7,21 +7,8 @@ using InteractiveUtils
 # ╔═╡ 1c20bae0-7091-4206-9e46-4f301530dd2b
 using Plots, Distributions, PlutoUI
 
-# ╔═╡ 80bb4300-f32c-4905-86c2-a5baaa793c16
-md"""
-3월 24일 연습
-"""
-
 # ╔═╡ ffa2911d-0c0e-4692-bbca-d9221d7c6ad6
 plots.plotly()
-
-# ╔═╡ a81b1b6e-1217-433b-938d-71fb2b5b1f43
-md"""
-### 포아송 분포
-"""
-
-# ╔═╡ 519e0320-793f-4129-be8b-2d3d5a9f329d
-
 
 # ╔═╡ 4b7a431d-ddba-46c5-8050-8e480f241cdb
 
