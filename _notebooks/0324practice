@@ -4,6 +4,18 @@
 using Markdown
 using InteractiveUtils
 
+# ╔═╡ 1c20bae0-7091-4206-9e46-4f301530dd2b
+
+
+# ╔═╡ 4b7a431d-ddba-46c5-8050-8e480f241cdb
+
+
+# ╔═╡ 63bfb616-12f4-4869-b376-b4afd60e9463
+
+
+# ╔═╡ cf09aa17-f924-4ce7-98f2-89a694c6f13b
+
+
 # ╔═╡ 7df82fd2-ac49-11ec-3874-43425418c8c7
 md"""
 `-` 지수분포의 요약
@@ -63,6 +75,10 @@ manifest_format = "2.0"
 """
 
 # ╔═╡ Cell order:
+# ╠═1c20bae0-7091-4206-9e46-4f301530dd2b
+# ╠═4b7a431d-ddba-46c5-8050-8e480f241cdb
+# ╠═63bfb616-12f4-4869-b376-b4afd60e9463
+# ╠═cf09aa17-f924-4ce7-98f2-89a694c6f13b
 # ╠═7df82fd2-ac49-11ec-3874-43425418c8c7
 # ╠═e1bd376e-8277-45ea-89d4-44b2f83a4798
 # ╠═512ccc60-7f22-4b98-b632-46b39fa30da1
